@@ -1,0 +1,15 @@
+package ar.com.questionados.models;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "respuesta")
+public class Respuesta {
+
+	private Long idRespuesta;
+	private boolean es_correcta;
+	private String texto;
+	private Long idPregunta;
+	
+}

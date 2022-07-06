@@ -1,0 +1,5 @@
+package ar.com.questionados.swagger;
+
+public class SwaggerConfiguration {
+
+}

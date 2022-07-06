@@ -1,0 +1,8 @@
+package ar.com.questionados.services;
+
+
+public interface CategoriaService{
+	
+	
+
+}

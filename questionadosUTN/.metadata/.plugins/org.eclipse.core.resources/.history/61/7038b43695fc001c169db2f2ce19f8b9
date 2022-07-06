@@ -1,0 +1,9 @@
+package ar.com.questionados.services;
+
+import ar.com.questionados.repository.CategoriaRepository;
+
+public interface CategoriaService extends CategoriaRepository{
+	
+	
+
+}

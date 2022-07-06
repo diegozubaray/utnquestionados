@@ -1,0 +1,5 @@
+package ar.com.questionados.services.Impl;
+
+public class CategoriaServiceImpl {
+
+}

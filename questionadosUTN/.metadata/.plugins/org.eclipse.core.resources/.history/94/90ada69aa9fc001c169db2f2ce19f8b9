@@ -1,0 +1,21 @@
+package ar.com.questionados.services;
+
+import java.util.List;
+
+import com.google.common.base.Optional;
+
+import ar.com.questionados.models.Categoria;
+
+public interface CategoriaService{
+	
+	public Iterable<Categoria> findAll();
+	
+	public Categoria crearCategoria(Categoria categoria);
+
+	public Categoria obtenerPorId(Long id);
+
+	public List<Categoria> obtenerTodas();	
+	
+	List<Categoria> findAllById(Iterable<Long> id);
+
+}

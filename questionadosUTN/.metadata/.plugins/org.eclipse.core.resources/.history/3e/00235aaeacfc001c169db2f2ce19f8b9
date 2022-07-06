@@ -1,0 +1,28 @@
+package ar.com.questionados.services.Impl;
+
+import java.util.List;
+
+import ar.com.questionados.models.Pregunta;
+import ar.com.questionados.services.PreguntaService;
+
+public class PreguntaServiceImpl implements PreguntaService {
+
+	@Override
+	public Pregunta crearPregunta(Pregunta pregunta) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Pregunta obtenerPorId(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Pregunta> obtenerTodas() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

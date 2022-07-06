@@ -1,0 +1,11 @@
+package ar.com.questionados.services;
+
+import java.util.List;
+
+import ar.com.questionados.models.Categoria;
+
+public interface PreguntaService{
+	
+	public List<Categoria> obtenerTodas();	
+
+}

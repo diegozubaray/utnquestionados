@@ -1,0 +1,28 @@
+package ar.com.questionados.models.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import ar.com.questionados.models.Pregunta;
+import ar.com.questionados.repository.PreguntaRepository;
+
+@RestController
+@RequestMapping("/api/preguntas")
+public class PreguntasController {
+	
+	
+	@Autowired
+	private PreguntaRepository pr;
+	
+	
+	@GetMapping
+	@RequestMapping(value = "/preguntas")
+	public List<Pregunta> getPreguntas() {
+		return (List<Pregunta>) pr.findAll();
+	}
+
+}

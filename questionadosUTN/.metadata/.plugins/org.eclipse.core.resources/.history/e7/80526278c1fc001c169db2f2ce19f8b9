@@ -1,0 +1,23 @@
+package ar.com.questionados.services.Impl;
+
+
+import ar.com.questionados.models.Pregunta;
+import ar.com.questionados.models.Respuesta;
+import ar.com.questionados.services.QuestionadosService;
+
+public class QuestionadosServiceImpl implements QuestionadosService  {
+
+	@Override
+	public Pregunta getPreguntaByCategoriaId(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Boolean validarRespuesta(Respuesta respuesta) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

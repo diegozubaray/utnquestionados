@@ -1,0 +1,49 @@
+package ar.com.questionados.models;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "respuesta")
+public class Respuesta {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long idRespuesta;
+	private boolean esCorrecta;
+	private String texto;
+	private Long idPregunta;
+	
+	
+	public Long getIdRespuesta() {
+				return idRespuesta;
+	}
+	public void setIdRespuesta(Long idRespuesta) {
+		this.idRespuesta = idRespuesta;
+	}
+	public boolean isEsCorrecta() {
+		return esCorrecta;
+	}
+	public void setEsCorrecta(boolean esCorrecta) {
+		this.esCorrecta = esCorrecta;
+	}
+	public String getTexto() {
+		return texto;
+	}
+	public void setTexto(String texto) {
+		this.texto = texto;
+	}
+	public Long getIdPregunta() {
+		return idPregunta;
+	}
+	public void setIdPregunta(Long idPregunta) {
+		this.idPregunta = idPregunta;
+	}
+	
+
+	
+	
+}

@@ -1,0 +1,10 @@
+package ar.com.questionados.models;
+
+public class Respuesta {
+
+	private Long idRespuesta;
+	private boolean es_correcta;
+	private String texto;
+	private Long idPregunta;
+	
+}

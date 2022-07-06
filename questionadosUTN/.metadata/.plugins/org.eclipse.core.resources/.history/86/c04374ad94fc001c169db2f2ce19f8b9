@@ -1,0 +1,9 @@
+package ar.com.questionados.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import ar.com.questionados.models.Categoria;
+
+public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
+
+}

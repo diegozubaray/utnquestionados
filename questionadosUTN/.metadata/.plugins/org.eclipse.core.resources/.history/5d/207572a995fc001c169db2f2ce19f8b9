@@ -1,0 +1,7 @@
+package ar.com.questionados.services;
+
+import ar.com.questionados.repository.PreguntaRepository;
+
+public interface PreguntaService extends PreguntaRepository{
+
+}

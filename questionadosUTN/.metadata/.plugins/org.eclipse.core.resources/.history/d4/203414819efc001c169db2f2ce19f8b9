@@ -1,0 +1,27 @@
+package ar.com.questionados.models.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import ar.com.questionados.models.Categoria;
+import ar.com.questionados.repository.CategoriaRepository;
+
+@RestController
+@RequestMapping("/api/categorias")
+public class CategoriasContoller {
+	
+	@Autowired
+	private CategoriaRepository cr;
+	
+	@GetMapping
+	@RequestMapping(value = "categorias")
+	public List<Categoria> getCategoria() {
+		return (List<Categoria>) cr.findAll();
+	}
+
+
+}
